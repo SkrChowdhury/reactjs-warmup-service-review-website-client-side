@@ -92,7 +92,7 @@ const Header = () => {
               </span>
             </Link>
             <ul class="flex items-center hidden ml-auto space-x-8 lg:flex">
-              {user?.email && <span>Welcome,{user.email}</span>}
+              {user?.email && <li>Welcome,{user.email}</li>}
 
               {user?.email ? (
                 <li>
@@ -190,25 +190,84 @@ const Header = () => {
                     <nav>
                       <ul class="space-y-4">
                         <li>
-                          <a
-                            href="/"
+                          <Link
+                            to="/"
                             aria-label="Our product"
                             title="Our product"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
-                            Product
-                          </a>
+                            Home
+                          </Link>
                         </li>
                         <li>
-                          <a
-                            href="/"
+                          <Link
+                            to="/blog"
                             aria-label="Our product"
                             title="Our product"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
-                            Features
-                          </a>
+                            Blog
+                          </Link>
                         </li>
+                        {user?.email && (
+                          <li>
+                            <Link
+                              to="/orders"
+                              aria-label="Our product"
+                              title="Our product"
+                              class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            >
+                              My Reviews
+                            </Link>
+                          </li>
+                        )}
+                        {user?.email && (
+                          <li>
+                            <Link
+                              to="/addService"
+                              aria-label="Our product"
+                              title="Our product"
+                              class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            >
+                              Add Service
+                            </Link>
+                          </li>
+                        )}
+                        {user?.email && <span>{user?.displayName}</span>} */}
+                        {user?.email && <span>Welcome,{user.email}</span>}
+                        <li>
+                          <Link
+                            to="/login"
+                            class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                            aria-label="Log In"
+                            title="Log In"
+                          >
+                            Log In
+                          </Link>
+                        </li>
+                        {user?.email ? (
+                          <li>
+                            <Link
+                              onClick={handleSignout}
+                              class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                              aria-label="Log Out"
+                              title="Log Out"
+                            >
+                              Log Out
+                            </Link>
+                          </li>
+                        ) : (
+                          <li>
+                            <Link
+                              to="/login"
+                              class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                              aria-label="Log In"
+                              title="Log In"
+                            >
+                              Log In
+                            </Link>
+                          </li>
+                        )}
                         <li>
                           <a
                             href="/"
