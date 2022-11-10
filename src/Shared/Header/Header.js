@@ -30,6 +30,7 @@ const Header = () => {
                   Home
                 </Link>
               </li>
+
               <li>
                 <Link
                   to="/blog"

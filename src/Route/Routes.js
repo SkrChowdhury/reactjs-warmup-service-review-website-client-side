@@ -9,6 +9,7 @@ import Home from '../Pages/Home/Home';
 import Login from '../Pages/Login/Login';
 import MyReview from '../Pages/MyReview/MyReview';
 import Register from '../Pages/Register/Register';
+import Services from '../Pages/Services/Services';
 
 export const routes = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ export const routes = createBrowserRouter([
     children: [
       {
         path: '/',
+
         element: <Home></Home>,
       },
       {
@@ -35,6 +37,10 @@ export const routes = createBrowserRouter([
       {
         path: '/addService',
         element: <AddNewService></AddNewService>,
+      },
+      {
+        path: '/services',
+        element: <Services></Services>,
       },
 
       {
