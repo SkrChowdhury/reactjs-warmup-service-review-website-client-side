@@ -1,17 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AddSer from '../AddSer/AddSer';
-
 import Banner from '../Banner/Banner';
-import Login from '../Login/Login';
 import Question from '../Question/Question';
-import Services from '../Services/Services';
+import Servicess from '../Servicess/Servicess';
 
 const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      <Services></Services>
+      <Servicess></Servicess>
       <Link
         to="/services"
         type="submit"
