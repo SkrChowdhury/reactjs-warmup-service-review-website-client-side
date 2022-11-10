@@ -4,6 +4,7 @@ import AddNewService from '../Pages/AddNewService/AddNewService';
 import AddSer from '../Pages/AddSer/AddSer';
 import Blog from '../Pages/Blog/Blog';
 import Details from '../Pages/Details/Details';
+import ErrorPage from '../Pages/ErrorPage/ErrorPage';
 import Home from '../Pages/Home/Home';
 import Login from '../Pages/Login/Login';
 import MyReview from '../Pages/MyReview/MyReview';
@@ -50,6 +51,10 @@ export const routes = createBrowserRouter([
       {
         path: 'orders',
         element: <MyReview></MyReview>,
+      },
+      {
+        path: '*',
+        element: <ErrorPage></ErrorPage>,
       },
     ],
   },
