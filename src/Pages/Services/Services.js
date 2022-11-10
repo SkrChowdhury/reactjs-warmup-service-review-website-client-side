@@ -4,7 +4,7 @@ import ServiceCard from './ServiceCard';
 const Services = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/services')
+    fetch('https://reactjs-warmup-server-side.vercel.app/services')
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
@@ -46,8 +46,7 @@ const Services = () => {
           your way. Advance everyday.
         </h2>
         <p className="text-base text-gray-700 md:text-lg">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque rem aperiam, eaque ipsa quae.
+          register to know more about us
         </p>
       </div>
       <div className="grid max-w-md gap-10 row-gap-8 lg:max-w-screen-lg sm:row-gap-10 lg:grid-cols-3 xl:max-w-screen-lg sm:mx-auto">

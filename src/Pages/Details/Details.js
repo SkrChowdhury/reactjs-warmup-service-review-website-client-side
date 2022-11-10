@@ -30,7 +30,7 @@ const Details = () => {
       img,
     };
 
-    fetch('http://localhost:5000/orders', {
+    fetch('https://reactjs-warmup-server-side.vercel.app/orders', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',

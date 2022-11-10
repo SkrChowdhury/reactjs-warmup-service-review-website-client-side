@@ -4,7 +4,7 @@ import ServiceCard from '../Services/ServiceCard';
 const Services = () => {
   const [servicess, setServicess] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000/servicess')
+    fetch('https://reactjs-warmup-server-side.vercel.app/servicess')
       .then((res) => res.json())
       .then((data) => setServicess(data));
   }, []);

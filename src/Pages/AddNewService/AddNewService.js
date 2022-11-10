@@ -9,7 +9,7 @@ const AddNewService = () => {
     const userInfo = data;
     userInfo.email = user.email;
 
-    fetch(`http://localhost:5000/addNewService`, {
+    fetch(`https://reactjs-warmup-server-side.vercel.app/addNewService`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json',

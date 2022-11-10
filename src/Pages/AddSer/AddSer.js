@@ -9,7 +9,9 @@ const AddSer = () => {
   const [order, setOrder] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000/addNewService?email=${user}`)
+    fetch(
+      `https://reactjs-warmup-server-side.vercel.app/addNewService?email=${user}`
+    )
       .then((res) => res.json())
 
       .then((data) => setOrder(data));

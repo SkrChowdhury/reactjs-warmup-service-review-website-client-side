@@ -37,12 +37,9 @@ const Question = () => {
             </svg>
             <span className="relative">The</span>
           </span>{' '}
-          quick, brown fox jumps over a lazy dog
+          Be fit, Be string, Join us
         </h2>
-        <p className="text-base text-gray-700 md:text-lg">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque rem aperiam, eaque ipsa quae.
-        </p>
+        <p className="text-base text-gray-700 md:text-lg">24/7 open</p>
       </div>
       <div className="grid gap-4 row-gap-5 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col justify-between p-5 border rounded shadow-sm">
