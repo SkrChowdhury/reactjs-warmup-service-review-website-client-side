@@ -61,7 +61,7 @@ const Header = () => {
                     title="My Reviews"
                     class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
                   >
-                    My Reviews
+                    Add Service
                   </Link>
                 </li>
               )}
@@ -92,7 +92,9 @@ const Header = () => {
               </span>
             </Link>
             <ul class="flex items-center hidden ml-auto space-x-8 lg:flex">
-              {user?.email && <li>Welcome,{user.email}</li>}
+              {user?.email && (
+                <li className="text-white">Welcome,{user.email}</li>
+              )}
 
               {user?.email ? (
                 <li>
@@ -233,8 +235,10 @@ const Header = () => {
                             </Link>
                           </li>
                         )}
-                        {user?.email && <span>{user?.displayName}</span>} */}
-                        {user?.email && <span>Welcome,{user.email}</span>}
+
+                        {user?.email && (
+                          <li className="text-white">Welcome,{user.email}</li>
+                        )}
                         <li>
                           <Link
                             to="/login"

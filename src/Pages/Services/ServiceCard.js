@@ -14,24 +14,6 @@ const ServiceCard = ({ service }) => {
         </PhotoView>
       </PhotoProvider>
 
-      {/* <div className="card-body">
-        <h2 className="card-title">{title}</h2>
-        <p className="text-2xl text-orange-600 font-semibold">
-          Price: ${price}
-        </p>
-
-        <p className="text-2xl text-orange-600 font-semibold">
-          {' '}
-          {description.slice(0, 100)}
-        </p>
-
-        <div className="card-actions justify-end">
-          <Link to={`/details/${_id}`}>
-            <button className="btn btn-primary">See Details</button>
-          </Link>
-        </div>
-      </div> */}
-
       <div className="flex flex-col transition duration-300 bg-white rounded shadow-sm hover:shadow">
         <div className="flex flex-col justify-between flex-grow p-8 border border-t-0 rounded-b">
           <div>
